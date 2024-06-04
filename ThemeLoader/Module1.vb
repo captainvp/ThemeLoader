@@ -4,9 +4,8 @@ Module Module1
 
     Sub Main()
         Try
-            Threading.Thread.Sleep(3000)
             Dim pr As Process = Process.Start(My.Settings.THEME_FILE)
-            Threading.Thread.Sleep(10000)
+            System.Threading.Thread.Sleep(1000)
             Try
                 Dim p As Process() = Process.GetProcessesByName("SystemSettings")
                 For i = 0 To p.Length - 1
